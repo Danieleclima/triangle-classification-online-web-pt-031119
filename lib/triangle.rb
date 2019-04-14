@@ -23,7 +23,7 @@ class Triangle
     if @triangle == "invalid" 
       raise TriangleError
     elsif @side1 == @side2 && @side2 == @side3
-      "equilateral"
+      :equilateral
     else
       
     end
