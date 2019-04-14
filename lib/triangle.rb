@@ -1,3 +1,5 @@
+require "pry"
+
 class Triangle
   
   attr_reader :side1, :side2, :side3, :triangle
@@ -24,6 +26,7 @@ class Triangle
       raise TriangleError
     elsif @side1 == @side2 && @side2 == @side3
       return :equilateral
+    binding.pry
     elsif @side1 == @side2 || @side1 == @side3 || @side2 == @side3 
       return :isosceles 
     else 
